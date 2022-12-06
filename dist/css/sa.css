@@ -1,0 +1,58 @@
+.foto-perfil {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.10);
+    border: 2px solid #ced4da;
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    padding: 0rem;
+    position: relative;
+    overflow: hidden;
+}
+.foto-perfil img {
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.foto-perfil .foto{
+  margin-left: 0;
+  position: relative;
+  left: 0rem;
+}
+.foto-perfil .trocar-imagem {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.foto-perfil .trocar-imagem p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 90px;
+}
+.foto-perfil .trocar-imagem input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.foto-perfil:hover .trocar-imagem {
+    opacity: 1;
+}
